@@ -1,0 +1,16 @@
+<form #formilarioRecarga="ngForm">
+  <h2>Regitre la recarga</h2>
+  <label for="">Operador</label>
+  <input type="text" [(ngModel)]="recarga.idOperador" name="operador" id="">
+  <label for="">vendedor</label>
+  <input type="text" [(ngModel)]="recarga.idVendedor" name="vendedor" id="">
+  <label for="">linea</label>
+  <input type="text"[(ngModel)]="recarga.lineaRecargada" name="linea" id="">
+  <label for="">valor</label>
+  <input type="number" [(ngModel)]="recarga.valorRecarga" name="valor" id="">
+  <input type="button" value="Guardar" (click)="registrarRecarga()">
+</form>
+
+
+
+<router-outlet></router-outlet>
